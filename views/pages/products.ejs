@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+
+    
+    <div>
+               
+            <% products.forEach(function(product) { %>
+            <div class="card">
+
+                <img class="thumbnail" src=<%=product._embedded.images[0].thumbnail%> /> 
+                <p><b><%= product.name %></b></p>
+               
+                <p>Price: <b>$<%= product.price %></b></p>
+              
+                <p>Color(s)  available: <%= product.color_name_brand %></p>
+                <p>Details: <%- product.short_description %></p>
+                <% if(product.returnable){ %>
+                    <p>Product is returnable</p>
+                  <% } else{ %>  
+                    <p>Product is not returnable</p>
+                 <% } %>
+                 <p>Sku: <%= product.sku %></p>
+                <p>Shipment Type: <%= product.shipment_type %></p>
+            
+                <p><b><%=product.return_policy_message.bold_substring%></b>: <%=product.return_policy_message.message%> </p>
+                 
+             
+                 
+            </div>
+            <% }); %>
+
+    </div>
+
+<footer>
+    <%- include('../partials/footer.ejs') %>
+</footer>
+
+
+</body>
+</html>

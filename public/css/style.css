@@ -1,0 +1,58 @@
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  background-color: #F8F8F8;
+  
+  width: 300px;
+  margin: 5px;
+  float: left;
+  text-align: left;
+  font-family: arial;
+  font-size: 12px;
+  border: solid 1px ;
+  border-color: #F8F8F8;
+  padding:7px;
+  height:1000px;
+
+}
+
+.thumbnail
+{
+  width:300px;
+  height:400px;
+}
+
+.inner {
+  margin-left: 50px;
+  background-color: #c6e2ff
+}
+
+
+
+.header {
+  padding: 60px;
+  text-align: left;
+  background: #6f9dc8;
+  color: white;
+  font-size: 30px;
+}
+
+.videodiv
+{
+  border:solid 1px;
+}
+.video
+{
+height: 500px; 
+width:700px;
+margin:10px;
+border:teal 2px;
+}
+
+.footerstyle
+{
+  display: table;
+  clear:both;
+  margin:10px;
+  width: 100%;
+}
