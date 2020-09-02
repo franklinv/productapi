@@ -20,6 +20,7 @@
 {
   width:300px;
   height:400px;
+  background-color: #ffffff;
 }
 
 .inner {
@@ -37,6 +38,12 @@
   font-size: 30px;
 }
 
+.videotext
+{
+font-family: arial;
+font-size: 20px;
+margin-left: 65px;
+}
 .videodiv
 {
   border:solid 1px;
