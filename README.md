@@ -1,11 +1,10 @@
 # productapi
 REST API Solution which displays product information using Node.js, Express, TypeScript, EJS
 
-This RET API solution has been developed using Node.js, Express, TypeScript EJS, HTML, CSS
+This REST API solution has been developed using Node.js, Express, TypeScript, EJS, HTML, CSS
 It exposes 2 end points through which users can get product information.
 
 Following are the 2 end points of the application:
-
 
 Type: GET
 /products:
@@ -17,33 +16,29 @@ Type: GET
 /productvideo:
 Displays a video preview of the product
 
-
 Layout:
 The layout of the pages to display product information is done at the front end using Templating Engine EJS.
 The logic to display product information is in the file views/pages/products.ejs
 The logic to display product video is in the file views/pages/productvideo.ejs
 
-Partial Pages for header and footer have been used so that they have a commmon header and footer
-It also means that code has been reused in these pages.
+Partial Pages for header and footer have been used so that they have a common header and footer, thus reusing the code in these pages.
 
-Styling has been done using a stylesheet under the public/css folder
-
+Styling has been done using a stylesheet under the public/css folder.
 Please Note: Some details from API which need not be displayed to the user are not displayed in the pages
 
-Folder structure
+Following is the folder structure:
 root
-    index.ts
-	public
-	     
-	views
-	     pages
-		         products.ejs
-			 	     productvideo.ejs
-		   partials
-		         header.ejs
-				     footer.ejs
-				 
-
+    index.ts
+	public  
+	      css        
+	         style.css
+        views
+	     pages
+		   products.ejs
+                   productvideo.ejs
+             partials
+		   header.ejs
+                   footer.ejs
 
 
 
